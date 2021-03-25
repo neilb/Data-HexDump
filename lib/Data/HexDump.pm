@@ -13,14 +13,13 @@
 package Data::HexDump;
 
 use strict;
-use vars qw(@ISA $VERSION @EXPORT);
-use Exporter;
+use warnings;
+
+use parent 'Exporter';
 use Carp;
 use FileHandle;
 
-@ISA = ('Exporter');
-$VERSION = 0.02;
-@EXPORT = qw(HexDump);
+our @EXPORT = qw( HexDump );
 
 sub new {
   my $this = shift;
