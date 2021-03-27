@@ -1,6 +1,6 @@
 Revision history for Perl module Data::HexDump
 
-0.02_01 2021-03-25 NEILB
+0.02_01 2021-03-27 NEILB
     * Fixed the warnings from pack that the testsuite was generating.
       Posthumous thanks to KENTNL for RT#123226, which included the fix.
     * Moved hexdump script to eg/, so it won't be installed.
@@ -8,6 +8,7 @@ Revision history for Perl module Data::HexDump
     * Added "use warnings" and refactored to drop "use vars"
     * Refactored the documentation.
     * Added SEE ALSO, with links to all the other hex dumpers I could find.
+    * Removed indirect method use
 
 0.02   1999-09-05   FTASSIN
     * Unknown contents

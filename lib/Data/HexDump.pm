@@ -148,7 +148,7 @@ sub get {
     $self->{'eod'} = eof $self->{'fh'};
   }
   elsif (defined $self->{'file'}) {
-    $self->{'fh'} = new FileHandle $self->{'file'};
+    $self->{'fh'} = FileHandle->new($self->{'file'});
     read $self->{'fh'}, $buf, $length;
     $self->{'eod'} = eof $self->{'fh'};
   }
@@ -161,7 +161,7 @@ sub get {
 sub HexDump ($) {
   my $val = shift;
 
-  my $f = new Data::HexDump;
+  my $f = Data::HexDump->new();
   $f->data($val);
   $f->dump;
 }
