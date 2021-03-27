@@ -4,7 +4,6 @@
 #
 #   HexDump.pm  -  Hexadecial Dumper
 #
-# version : 0.02
 # Copyright (c) 1998, 1999, Fabien Tassin <fta@oleane.net>
 ##########################################################################
 # ABSOLUTELY NO WARRANTY WITH THIS PACKAGE. USE IT AT YOUR OWN RISKS.
@@ -231,16 +230,6 @@ so if you pass to the C<data> method,
 then any subsequent calls to C<fh()> or C<file()>
 will have no effect.
 
-=head1 COPYRIGHT
-
-Copyright (c) 1998-1999 Fabien Tassin. All rights reserved.
-This program is free software; you can redistribute it and/or
-modify it under the same terms as Perl itself.
-
-=head1 AUTHOR
-
-Fabien Tassin E<lt>fta@oleane.netE<gt>
-
 =head1 SEE ALSO
 
 L<Data::Hexify>, by Johan Vromans, is another simple option,
@@ -267,5 +256,17 @@ but there are other more featured modules,
 and this one doesn't have example output in the doc.
 
 L<String::HexConvert> will convert ASCII strings to hex and reverse.
+
+
+=head1 AUTHOR
+
+Fabien Tassin E<lt>fta@oleane.netE<gt>
+
+
+=head1 COPYRIGHT
+
+Copyright (c) 1998-1999 Fabien Tassin. All rights reserved.
+This program is free software; you can redistribute it and/or
+modify it under the same terms as Perl itself.
 
 =cut
