@@ -6,6 +6,8 @@ Revision history for Perl module Data::HexDump
     * Moved hexdump script to eg/, so it won't be installed.
       Addresses RT#123224 from KENTNL.
     * Added "use warnings" and refactored to drop "use vars"
+    * Refactored the documentation.
+    * Added SEE ALSO, with links to all the other hex dumpers I could find.
 
 0.02   1999-09-05   FTASSIN
     * Unknown contents
