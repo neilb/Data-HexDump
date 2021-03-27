@@ -1,0 +1,22 @@
+    Data::HexDump - a Perl module for hexdumping data or a file
+
+This distribution contains a Perl module which can generate
+a traditional hex dump of either a data variable or a file.
+
+
+You can read a nicely formatted version of the documentation for
+this module online:
+
+    https://metacpan.org/pod/Data::HexDump
+
+
+You should be able to install this using your usual method for installing
+modules from CPAN. If you don't have a usual method, have a look at:
+
+    http://www.cpan.org/modules/INSTALL.html
+
+
+This software is copyright (c) 1998 Fabien Tassin.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
