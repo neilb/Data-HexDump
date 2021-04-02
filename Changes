@@ -1,5 +1,9 @@
 Revision history for Perl module Data::HexDump
 
+0.03 2021-04-02 NEILB
+    * Developer release all green on CPAN Testers, so doing
+      a stable release.
+
 0.02_01 2021-03-27 NEILB
     * Fixed the warnings from pack that the testsuite was generating.
       Posthumous thanks to KENTNL for RT#123226, which included the fix.
