@@ -88,7 +88,7 @@ sub dump {
   $out .= sprintf "%08X  ", $j * 16;
   $l = "";
   my $val;
-  while ($val = $self->get) {
+  while (($val = $self->get) ne '') {
     while (length $val && defined (my $v = substr $val, 0, 1, '')) {
       $out .= sprintf "%02X", ord $v;
       $out .= " " if $i < 15;
