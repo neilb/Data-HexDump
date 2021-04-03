@@ -255,6 +255,10 @@ L<Devel::Hexdump> provides some configuration options,
 but there are other more featured modules,
 and this one doesn't have example output in the doc.
 
+L<Data::Peek> is a collection of functions for displaying data,
+including C<DHexDump> which generates a simple hex dump
+from a string.
+
 L<String::HexConvert> will convert ASCII strings to hex and reverse.
 
 
