@@ -2,6 +2,7 @@ Revision history for Perl module Data::HexDump
 
 0.04 2021-04-03 NEILB
     * Added Data::Peek to SEE ALSO, for DHexDump().
+    * SYNOPSIS wasn't a working example.
 
 0.03 2021-04-02 NEILB
     * Developer release all green on CPAN Testers, so doing

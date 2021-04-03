@@ -173,12 +173,25 @@ Data::HexDump - Hexadecial Dumper
 
 =head1 SYNOPSIS
 
+Functional interface:
+
   use Data::HexDump;
+  print HexDump($data_string);
 
-  my $buf = "foo\0bar";
-  print HexDump($buf);
+OO interface:
 
-which produces:
+  use Data::HexDump;
+  my $dumper = Data::HexDump->new();
+  print while $_ = $dumper->dump;
+
+=head1 DESCRIPTION
+
+This module will generate a hexadecimal dump of a data string or file.
+You can either use the exported function,
+as shown in the SYNOPSIS above,
+or the OO interface, described below.
+
+The second example from the SYNOPSIS generated this output:
 
            00 01 02 03 04 05 06 07 - 08 09 0A 0B 0C 0D 0E 0F  0123456789ABCDEF
 
@@ -187,14 +200,6 @@ which produces:
  00000020  77 61 72 6E 69 6E 67 73 - 3B 0A 0A 70 72 69 6E 74  warnings;..print
  00000030  20 22 48 65 6C 6C 6F 2C - 20 77 6F 72 6C 64 5C 6E   "Hello, world\n
  00000040  22 3B 0A                                           ";.
-
-
-=head1 DESCRIPTION
-
-This module will generate a hexadecimal dump of a data string or file.
-You can either use the exported function,
-as shown in the SYNOPSIS above,
-or the OO interface, described below.
 
 The result is returned in a string.
 Each line of the result consists of the offset in the
@@ -222,7 +227,7 @@ and then generate the hex dump:
     $dh->fh($fh);            # read this filehandle
     $dh->file($filename);    # read this file and dump contents
 
-    print while $_ = $f->dump;
+    print while $_ = $dh->dump;
 
 The different potential sources for data are considered
 in the order given above,
